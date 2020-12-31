@@ -70,6 +70,7 @@
         line-height: 36px;
         margin-bottom: 15px;
         
+        
         &:before  
         {
             content: '';
@@ -94,6 +95,10 @@
         a
         {
             color: #ffffff;
+            &:hover
+            {
+                text-decoration: none;
+            }
         }
     }
     &__social
@@ -106,6 +111,17 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        &_icon
+        {
+            &:hover
+            {
+                svg path
+                {
+                    fill: red;
+                }
+            }
+        }
+        
     }
     &__overlay
     {
